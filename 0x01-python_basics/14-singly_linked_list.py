@@ -6,25 +6,40 @@ class Node:
     node definition
     """
     def __init__(self, data, next_node=None):
+        """
+        node definition
+        """
         self.data = data
         self.next_node = next_node
 
     @property
     def data(self):
+        """
+        for node data
+        """
         return self.__data
 
     @property
     def next_node(self):
+        """
+        getter for next_node
+        """
         return self.__next_node
 
     @data.setter
     def data(self, value):
+        """
+        setter
+        """
         if value.__class__ is not int:
             raise TypeError("data must be an integer")
         self.__data = value
 
     @next_node.setter
     def next_node(self, value):
+        """
+        setter
+        """
         if value is None or type(value) is Node:
            self.__next_node = value
         else:
@@ -36,6 +51,9 @@ class SinglyLinkedList:
     class definition
     """
     def __init__(self):
+        """
+        initialization
+        """
         self.__head = None
 
     def __str__(self):
