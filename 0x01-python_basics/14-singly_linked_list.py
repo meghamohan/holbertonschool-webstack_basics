@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+
 class Node:
     def __init__(self, data, next_node=None):
         self.data = data
@@ -24,6 +26,7 @@ class Node:
            self.__next_node = value
         else:
             raise TypeError("next_node must be a Node object")
+
 
 class SinglyLinkedList:
         """
