@@ -2,6 +2,8 @@
 """
 checks for lowercase characters
 """
+
+
 def islower(c):
     """
     checks for lowercase characters
