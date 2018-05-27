@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 def simple_delete(my_dict, key=""):
     """
     deletes a key in dictionary
