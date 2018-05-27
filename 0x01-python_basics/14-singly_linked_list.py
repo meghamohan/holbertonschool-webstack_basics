@@ -2,6 +2,9 @@
 
 
 class Node:
+    """
+    node definition
+    """
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
@@ -29,32 +32,32 @@ class Node:
 
 
 class SinglyLinkedList:
-        """
-        class definition
-        """
-        def __init__(self):
-            self.__head = None
+    """
+    class definition
+    """
+    def __init__(self):
+        self.__head = None
 
-        def __str__(self):
-            """
-            returns the node data list
-            """
-            nodeList = []
-            n = self.__head
-            while n is not None:
-                nodeList.append(str(n.data))
-                n = n.next_node
-            return '\n'.join(nodeList)
+    def __str__(self):
+        """
+        returns the node data list
+        """
+        nodeList = []
+        n = self.__head
+        while n is not None:
+            nodeList.append(str(n.data))
+            n = n.next_node
+        return '\n'.join(nodeList)
 
-        def sorted_insert(self, value):
-            """
-            inserts a node to list in ascending order
-            """
-            if self.__head is None or self.__head.data >= value:
-                self.__head = Node(value, next_node=self.__head)
-            else:
-                walk = self.__head
-                while walk.next_node and walk.next_node.data < value:
-                    walk = walk.next_node
-                newNode = Node(value, next_node=walk.next_node)
-                walk.next_node = newNode
+    def sorted_insert(self, value):
+        """
+        inserts a node to list in ascending order
+        """
+        if self.__head is None or self.__head.data >= value:
+            self.__head = Node(value, next_node=self.__head)
+        else:
+            walk = self.__head
+            while walk.next_node and walk.next_node.data < value:
+                walk = walk.next_node
+            newNode = Node(value, next_node=walk.next_node)
+            walk.next_node = newNode
