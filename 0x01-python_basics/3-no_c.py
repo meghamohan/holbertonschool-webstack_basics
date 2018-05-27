@@ -2,6 +2,8 @@
 """
 program that removes c/C of a string
 """
+
+
 def no_c(str):
     newStr = ''
     for i in str:
