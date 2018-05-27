@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""
-prints all the arguments
-"""
-from  sys import argv
+from sys import argv
 
 
 if __name__ == "__main__":
+    """
+    prints all the arguments
+    """
     l = len(argv)
     if l is 1:
         print("{} arguments.".format(l - 1))
