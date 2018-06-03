@@ -1,0 +1,16 @@
+#container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+
+article {
+    width: 300px;
+    background-color: #FFFFFF;
+    position: relative;
+    min-height: 110px;
+    margin: 10px;
+    border: #CCCCCC solid 1px;
+    border-radius: 10px;
+    display: inline-flex;
+}
