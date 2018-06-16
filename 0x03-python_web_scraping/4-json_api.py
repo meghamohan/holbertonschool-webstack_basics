@@ -12,10 +12,9 @@ if __name__ == "__main__":
         q = sys.argv[1]
     else:
         q = ""
-    req = requests.post("http://0.0.0.0:5000/search_user", data={'q': q})
+    req = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
     try:
         res = req.json()
-        print(res)
     except:
         print("Not a valid JSON")
     if res:
