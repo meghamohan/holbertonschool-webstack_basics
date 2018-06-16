@@ -14,7 +14,6 @@ if __name__ == '__main__':
     url = 'https://api.github.com/users/'
     req = requests.get(url, auth=HTTPBasicAuth(user, pswd))
     res = req.json()
-    print(res)
     try:
         print(res['id'])
     except:
