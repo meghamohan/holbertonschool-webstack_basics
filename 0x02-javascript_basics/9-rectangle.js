@@ -4,9 +4,10 @@ exports.Rectangle = function Rectangle (w, h) {
     this.width = w;
     this.height = h;
   }
-this.print = function () {
-  for (let i = 0; i < h; i++) {
-    console.log('X'.repeat(w));
-  }
-};
+
+  this.print = function () {
+    for (let i = 0; i < h; i++) {
+      console.log('X'.repeat(w));
+    }
+  };
 };
