@@ -1,0 +1,24 @@
+CONCEPTS TO LEARN
+- How to run a Javascript script
+- What are differences between var, const and let
+- What is a function and how do you use functions
+- What are all the data types available in Javascript
+- How to use the if, if ... else statements
+- How to use comments
+- How to affect values to variables
+- How to use while and for loops
+- How to use break and continue statements
+- What is a function and how do you use functions
+- What does return a function that does not use any return statement
+- Scope of variables
+- What are the arithmetic operators and how to use them
+- How to manipulate dictionary
+- How to import a file
+- How to create an object in Javascript
+- What this means
+- What undefined means
+- Why the variable type and scope is important
+- What is a closure
+- What is a prototype
+- How to inherit an object from another
+- How to read and write a file using fs module
