@@ -16,5 +16,6 @@ if __name__ == '__main__':
         count = len(res)
     else:
         count = 10
-    for i in res[:10]:
-        print(i['sha'] + ': ' + i['commit']['author']['name'])
+    for i in range(0, count):
+        print(res[i]['sha'] + ': ' + res[i]['commit']['author']['name'])
+        count -= 1
